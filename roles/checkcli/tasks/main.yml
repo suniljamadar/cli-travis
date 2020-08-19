@@ -7,7 +7,7 @@
         register: ver
 
       - debug:
-          msg: "previous version awscli available, removing.."
+          msg: "ansibel gets installed from role cli"
         when: ver.rc == 0
       - debug:
           msg: "awscli is not available, installing.."
