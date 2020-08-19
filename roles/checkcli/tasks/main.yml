@@ -1,0 +1,14 @@
+---
+    - name: check awscli installed or not
+      block:
+      - name: check awscli installed or not
+        shell: aws --version
+        ignore_errors: true
+        register: ver
+
+      - debug:
+          msg: "previous version awscli available, removing.."
+        when: ver.rc == 0
+      - debug:
+          msg: "awscli is not available, installing.."
+        when: ver.rc != 0
