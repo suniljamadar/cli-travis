@@ -29,5 +29,6 @@
     # Add AWS credential profile for root (become) user
     - name: Creates .aws directory
       file:
-        dest: /root/.aws/
+        dest: ~/.aws/
         state: directory
+
