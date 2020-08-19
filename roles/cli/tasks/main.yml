@@ -1,11 +1,11 @@
 ---
     
-    - name: Gather EC2 Metadata Facts
-      ec2_metadata_facts:
-
-    - name: install yum dependancies
-      yum:
-        name: unzip
+#    - name: Gather EC2 Metadata Facts
+#      ec2_metadata_facts:
+#
+#    - name: install yum dependancies
+#      yum:
+#        name: unzip
 
     - name: remove previous AWS CLI version
       shell: |
