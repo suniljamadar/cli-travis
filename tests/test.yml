@@ -2,5 +2,5 @@
 - hosts: localhost
   connection: local
   roles:
-    - {role: cli}
-    - {role: checkcli}
+    - {role: ../roles/cli}
+    - {role: ../roles/checkcli}
