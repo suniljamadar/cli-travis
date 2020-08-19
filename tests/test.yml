@@ -2,7 +2,5 @@
 - hosts: localhost
   connection: local
   roles:
-    - {role: 'cli',
-        tags: ['ami-Setup']
-    - {role: 'checkcli',
-        tags: ['ami-Setup']
+    - {role: cli}
+    - {role: checkcli}
