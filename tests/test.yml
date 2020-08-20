@@ -2,5 +2,9 @@
 - hosts: localhost
   connection: local
   roles:
-    - {role: ../roles/cli}
-    - {role: ../roles/checkcli}
+    - {role: '../roles/cli',
+        tags: ['test']
+      }
+    - {role: '../roles/checkcli',
+        tgags: ['test']
+      }
