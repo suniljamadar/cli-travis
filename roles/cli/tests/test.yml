@@ -5,6 +5,3 @@
     - {role: '../roles/cli',
         tags: ['test']
       }
-    - {role: '../roles/checkcli',
-        tgags: ['test']
-      }
